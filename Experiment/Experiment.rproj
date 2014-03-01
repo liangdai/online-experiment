@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="RTarget" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1930dab3-c663-4684-b9a1-7b34ddfccef3}</ProjectGuid>
+    <AssemblyName>Experiment</AssemblyName>
+    <Name>Experiment</Name>
+    <RootNamespace>Experiment</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="111.R">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="112.R">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="50-50.R">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Best.R">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Greedy.R">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Ourmethod.R">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ourmethod2.R">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="plotbar.R">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Random.R">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="RPM.R">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SAVE.R">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="save2.R">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UCB.R">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="VFR.R">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <Target Name="RTarget">
+    <Message Text="Executing R script" />
+  </Target>
+</Project>
