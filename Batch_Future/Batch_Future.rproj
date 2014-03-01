@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="RTarget" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{094a6609-b2b4-420f-84b7-5c8398b57683}</ProjectGuid>
+    <AssemblyName>Batch_Future</AssemblyName>
+    <Name>Batch_Future</Name>
+    <RootNamespace>Batch_Future</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="2014.R">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="20142.R">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Batch_future.R">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="newab.R">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ourmethod.R">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="plot.R">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Proposed_F.R">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="RPM_F.R">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Setup.R">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="stas.R">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="stas_greedy.R">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="stas_plot.R">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Stas_sudoinfo.R">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Stas_ucb.R">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Stats_ci.R">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Stats_info.R">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Stats_power.R">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Stats_Random.R">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Stats_RPM.R">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="sudeoinfo.R">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="test.R">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="testformodel.R">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <Target Name="RTarget">
+    <Message Text="Executing R script" />
+  </Target>
+</Project>
